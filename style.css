@@ -1,0 +1,105 @@
+
+
+:root {
+  --small-font: 10px;
+  --medium-font: 14px;
+  --large-font: 30px;
+  --grid-size: 300px;
+  --header-color: hsl(232, 19%, 15%);
+  --main-color: hsl(230, 17%, 14%);
+  --grid-color: hsl(228, 28%, 20%);
+  --grid-hover-color: hsl(228, 34%, 66%);
+  --font-color: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: var(--medium-font);
+  color: var(--font-color);
+  background-color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+header {
+  display: flex;
+  background-color: var(--header-color);
+  padding: 0.5rem;
+}
+
+header>.title {
+  font-weight: 700;
+  font-size: var(--large-font);
+}
+
+header>.mode {
+  margin-left: auto;
+  margin-top: 0.5rem;
+}
+
+.repos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: var(--large-font);
+}
+
+.repo-link {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.project {
+  background-color: var(--grid-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.project:hover {
+  background-color: var(--grid-hover-color);
+  color: black;
+  scale: 1.05;
+}
+
+.project img {
+  max-width: 250px;
+}
+
+.tech {
+  align-self: flex-start;
+  padding-left: 1rem;
+  font-weight: 700;
+}
+
+.project ul {
+  display: flex;
+  padding-left: 0;
+  font-weight: 700;
+}
+
+.project li {
+  list-style: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.project p {
+  text-align: center;
+}
+
+/*
+@media only screen and (max-width: 400px) {
+
+  .repos {
+    grid-template-columns: var(--grid-size);
+  }
+}
+*/
