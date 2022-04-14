@@ -17,6 +17,7 @@ function CreateCard(data) {
 
   const image = document.createElement('img');
   image.src = data.image;
+  image.alt = data.title;
   project.appendChild(image);
 
   const techUsed = document.createElement('div');

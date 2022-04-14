@@ -13,9 +13,8 @@
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
-
 style-guide.md
-
-# Temporary
-README.md
-interactive-rating-component-main/
+README-template.md
+design/
+# Temp
+/README.md
